@@ -2,5 +2,3 @@
 __pycache__
 build/
 dist/
-build_modpack.py
-release_modpack.py

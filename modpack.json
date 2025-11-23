@@ -1,0 +1,12 @@
+{
+    "modpack_name": "Terereland",
+    "version": "1.0.2",
+    "mc_version": "1.20.1",
+    "loader": "fabric",
+    "files": [
+        {
+            "path": "mods/sodium-fabric-0.5.13+mc1.20.1.jar",
+            "sha1": "bcdbf37d9494e405cba210d7a80ed58e756297b5"
+        }
+    ]
+}

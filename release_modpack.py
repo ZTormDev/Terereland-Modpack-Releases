@@ -14,6 +14,22 @@ MODPACK_JSON = "modpack.json"
 ZIP_OUTPUT = "./build"       # Carpeta temporal para ZIP
 
 
+# Archivos o carpetas a ignorar
+IGNORE = {
+    "modpack.json",
+    "version.txt",
+    ".DS_Store",
+    "__pycache__",
+    ".git",
+    ".github",
+    "build_modpack.py",
+    "release_modpack.py",
+    ".gitignore",
+    "build"
+}
+
+
+
 # ============================
 #   TOKEN
 # ============================
@@ -44,13 +60,14 @@ def zip_modpack(version):
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
         for root, dirs, files in os.walk(MODPACK_ROOT):
             for file in files:
-                if file in ("upload_release.py", zip_filename):
+                if file in IGNORE or any(ig in root for ig in IGNORE):
                     continue
 
                 full_path = os.path.join(root, file)
                 rel_path = os.path.relpath(full_path, MODPACK_ROOT)
 
                 zipf.write(full_path, rel_path)
+                print(f"➕ {rel_path}")
 
     print("✅ Compresión terminada.")
     return zip_path

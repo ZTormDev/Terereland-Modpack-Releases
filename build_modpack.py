@@ -3,9 +3,10 @@ import hashlib
 import json
 import re
 
-MODPACK_NAME = "MiModpack"
+MODPACK_NAME = "Terereland"
 MC_VERSION = "1.20.1"
 LOADER = "fabric"
+LOADER_VERSION = "0.18.1"
 
 # Carpeta donde está tu modpack
 MODPACK_ROOT = "./"
@@ -24,7 +25,8 @@ IGNORE = {
     ".github",
     "build_modpack.py",
     "release_modpack.py",
-    ".gitignore"
+    ".gitignore",
+    "build"
 }
 
 
@@ -104,6 +106,7 @@ def build_modpack():
         "version": new_version,
         "mc_version": MC_VERSION,
         "loader": LOADER,
+        "loader_version": LOADER_VERSION,
         "files": files
     }
 

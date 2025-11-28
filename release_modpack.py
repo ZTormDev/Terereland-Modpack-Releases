@@ -4,28 +4,36 @@ import json
 import zipfile
 from datetime import datetime
 
+# Try to import winsound for a native Windows sound play; we'll fall back to
+# printing a bell (\a) if it's not available (non-Windows systems).
+try:
+    import winsound
+    HAS_WINSOUND = True
+except Exception:
+    HAS_WINSOUND = False
+
 REPO = "ZTormDev/Terereland-Modpack-Releases"
 TAG_PREFIX = "v"
 
-MODPACK_ROOT = "./"          # Carpeta del modpack
-VERSION_FILE = "version.txt"
-MODPACK_JSON = "modpack.json"
+MODPACK_ROOT = "./modpack"          # Carpeta del modpack
+VERSION_FILE = "./modpack/version.txt"
+MODPACK_JSON = "./modpack/modpack.json"
 
-ZIP_OUTPUT = "./build"       # Carpeta temporal para ZIP
+ZIP_OUTPUT = "./releases"       # Carpeta temporal para ZIP
 
 
 # Archivos o carpetas a ignorar
 IGNORE = {
-    "modpack.json",
-    "version.txt",
+    "./modpack/modpack.json",
+    "./modpack/version.txt",
     ".DS_Store",
     "__pycache__",
     ".git",
     ".github",
-    "build_modpack.py",
-    "release_modpack.py",
+    "./build_modpack.py",
+    "./release_modpack.py",
     ".gitignore",
-    "build"
+    "./releases"
 }
 
 
@@ -80,7 +88,7 @@ def create_release(version):
         "tag_name": f"{TAG_PREFIX}{version}",
         "name": f"Terereland Modpack {version}",
         "body": f"Release auto-generado\nFecha: {datetime.now()}",
-        "draft": False,
+        "draft": True,
         "prerelease": False
     }
 
@@ -122,7 +130,32 @@ def upload_file(upload_url, file_path):
         raise Exception("Error al subir archivo.")
 
     print(f"✅ Subido: {file_name}")
-
+    
+    
+def publish_release(url):
+    # Obtener el ID del release
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json"
+    }
+    r = requests.get(url, headers=headers)
+    if r.status_code not in (200, 201):
+        print("❌ Error obteniendo release para publicar:")
+        print(r.text)
+        raise Exception("No se pudo obtener el release.")
+    data = r.json()
+    release_id = data["id"]
+    # Publicar el release (cambiar draft a False)
+    patch_url = f"https://api.github.com/repos/{REPO}/releases/{release_id}"
+    payload = {
+        "draft": False
+    }
+    r = requests.patch(patch_url, json=payload, headers=headers)
+    if r.status_code not in (200, 201):
+        print("❌ Error publicando release:")
+        print(r.text)
+        raise Exception("No se pudo publicar el release.")
+    print("🚀 Release publicado correctamente.")
 
 # ============================
 #   MAIN
@@ -140,12 +173,30 @@ def main():
     upload_file(upload_url, VERSION_FILE)
     upload_file(upload_url, MODPACK_JSON)
     upload_file(upload_url, zip_path)
+    
+    # Publica el release (cambia de draft a publicado)
+    publish_release(upload_url)
 
     print("\n🎯 Release COMPLETO:")
     print("   - version.txt")
     print("   - modpack.json")
     print(f"   - ZIP del modpack → {os.path.basename(zip_path)}")
     print("\n🔥 Todo salió god.\n")
+
+    # Reproduce un sonido al final del script (Windows: winsound; other: BEL)
+    def play_finish_sound():
+        try:
+            if HAS_WINSOUND:
+                # Short beep using the Windows MessageBeep with OK icon
+                winsound.MessageBeep(winsound.MB_OK)
+            else:
+                # Fallback: print ASCII bell - may or may not be audible
+                print('\a')
+        except Exception:
+            # Silently ignore any issues playing sound
+            pass
+
+    play_finish_sound()
 
 
 if __name__ == "__main__":

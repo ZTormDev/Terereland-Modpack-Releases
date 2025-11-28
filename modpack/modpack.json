@@ -1,0 +1,822 @@
+{
+    "modpack_name": "Terereland",
+    "version": "1.0.6",
+    "mc_version": "1.21.1",
+    "loader": "neoforge",
+    "loader_version": "21.1.215",
+    "java_version": 21,
+    "files": [
+        {
+            "path": "options.txt",
+            "sha1": "28eed1ff600ea36bce10397ae82d929026b6dc86"
+        },
+        {
+            "path": "config/ambientsounds-client.json",
+            "sha1": "1299bf43a890c08cd86dda919a25bb8c944dbbde"
+        },
+        {
+            "path": "config/appleskin-client.toml",
+            "sha1": "8f167f14bbd81163f78c5e3459dcffdb50225117"
+        },
+        {
+            "path": "config/bakery-common.toml",
+            "sha1": "3c7888c2c1344499497a92585489c40b57d21dc5"
+        },
+        {
+            "path": "config/betterdeserttemples-neoforge-1_21.toml",
+            "sha1": "19403763939d1550752fbfd944a67b71771fa3f5"
+        },
+        {
+            "path": "config/bettermineshafts-neoforge-1_21.toml",
+            "sha1": "34a379b8db169b68ccd47cc568392b0e984877ea"
+        },
+        {
+            "path": "config/betteroceanmonuments-neoforge-1_21.toml",
+            "sha1": "2827b8ebefb6d91e6886970c656a85113d0c4739"
+        },
+        {
+            "path": "config/betterstrongholds-neoforge-1_21.toml",
+            "sha1": "9a344f54f80a0f1437e542e4b7b39deef89c3aed"
+        },
+        {
+            "path": "config/catalogue.properties",
+            "sha1": "a99bf37688346845f00c2b27bd6961b6513c5140"
+        },
+        {
+            "path": "config/comforts-common.toml",
+            "sha1": "9f35d6dfdcbc8773d8a057bffbfac5c8d9ed1b0a"
+        },
+        {
+            "path": "config/comforts-server.toml",
+            "sha1": "28ab4c7c925eff47d552dc3ef7eb404ddfc6336f"
+        },
+        {
+            "path": "config/creativecore-client.json",
+            "sha1": "2ac12a74fc6c40a697dfeb4ee9eda22e9241a6b7"
+        },
+        {
+            "path": "config/crittersandcompanions-common.toml",
+            "sha1": "ee984f772f50674fe66e110e567a9246e8fe95b4"
+        },
+        {
+            "path": "config/emotecraft.json",
+            "sha1": "46b34d6ad5ce1ad7846e67a0c1a529b146571245"
+        },
+        {
+            "path": "config/emotecraft_emote_map.json",
+            "sha1": "be63473ca7f8286a8827f2e151fff6ce4016ff4d"
+        },
+        {
+            "path": "config/entityculling.json",
+            "sha1": "e63465d1e006faccb5e5f41474705486ad7b4c5c"
+        },
+        {
+            "path": "config/farmersdelight-client.toml",
+            "sha1": "922ef1cdf87795d0134ca8c0c4b1a9eb290f0ec6"
+        },
+        {
+            "path": "config/farmersdelight-common.toml",
+            "sha1": "79ac5a884c5d7723811457ff4125c03c45ec0374"
+        },
+        {
+            "path": "config/farm_and_charm-common.toml",
+            "sha1": "50825f02473d59187bb650ba381613c213150079"
+        },
+        {
+            "path": "config/ferritecore-mixin.toml",
+            "sha1": "f1d902da8fd367060ea93e96dedc85f6d0a3dff5"
+        },
+        {
+            "path": "config/fml.toml",
+            "sha1": "021ca627964c398ed756609b0644e25203519d6d"
+        },
+        {
+            "path": "config/ftbchunks-client.snbt",
+            "sha1": "e3bad79388e99e2a69ec5da6ced890ab7581465e"
+        },
+        {
+            "path": "config/ftblibrary-client.snbt",
+            "sha1": "13fb32d56a7022ba31758a8f330a5fb0fabda6eb"
+        },
+        {
+            "path": "config/ftbxmodcompat.snbt",
+            "sha1": "f85f3c3d34fe0e8d66744d4d0b9fbf597ba655c4"
+        },
+        {
+            "path": "config/immediatelyfast.json",
+            "sha1": "adcb21b0ad5f7f1c124517ff64fc701a737e4ea1"
+        },
+        {
+            "path": "config/iris-excluded.json",
+            "sha1": "20bd3420b5c911402ac289c154b56ac1dd8f84ba"
+        },
+        {
+            "path": "config/iris.properties",
+            "sha1": "2712b2643fa3b6d790ffd5a12f8a9f20aaa34c48"
+        },
+        {
+            "path": "config/moonlight-client.toml",
+            "sha1": "b526f2443c89773338e2b1076d7ebf6eaf0e810a"
+        },
+        {
+            "path": "config/moonlight-common.toml",
+            "sha1": "f33a233c903b0a4add71d23e6c246a7c351da6e2"
+        },
+        {
+            "path": "config/neoforge-client.toml",
+            "sha1": "b51515abb0c65a891514baffb4c78d2357ecd1ed"
+        },
+        {
+            "path": "config/neoforge-common.toml",
+            "sha1": "6b10e4debbf06a33453f4e0ffb80281ff0752f9f"
+        },
+        {
+            "path": "config/patchouli-client.toml",
+            "sha1": "fca303723bcd692f1d64b76c7cf303afa46fc142"
+        },
+        {
+            "path": "config/pehkui-client.toml",
+            "sha1": "f84c35cc9fa9367574eae41f658d67ec74fbcc81"
+        },
+        {
+            "path": "config/pehkui-common.toml",
+            "sha1": "10b8cbd627d7a9df1886b7746b8daa28909f2a09"
+        },
+        {
+            "path": "config/primal-common.toml",
+            "sha1": "d156601d0c970cb17cf836b23f700f42d0dddf2f"
+        },
+        {
+            "path": "config/refurbished_furniture.client.toml",
+            "sha1": "561e5d56e21f331ef339f50913f150eadac2c155"
+        },
+        {
+            "path": "config/securitycraft-client.toml",
+            "sha1": "62012e4e1926ad9067ca200248ef91941cab0530"
+        },
+        {
+            "path": "config/smoothswapping.json",
+            "sha1": "845ccd1f96cf635d7adbe528481364bdcbce3335"
+        },
+        {
+            "path": "config/snowyspirit-client.toml",
+            "sha1": "465fa09fc428a3cb4a52d87dc9ec3ae35685f4a9"
+        },
+        {
+            "path": "config/snowyspirit-common.toml",
+            "sha1": "b4b46781b4a467bf58c1c608d5c8d5206841fa4e"
+        },
+        {
+            "path": "config/sodium-fingerprint.json",
+            "sha1": "6b5655c329ec0eb6e03aa6b96958ed599f907ea7"
+        },
+        {
+            "path": "config/sodium-mixins.properties",
+            "sha1": "5455463ee999b945c1cff8ae90f2b705e19fb86c"
+        },
+        {
+            "path": "config/sodium-options.json",
+            "sha1": "7cb7ced431ad04414be5a7cc6bb9f2de3fcf51f5"
+        },
+        {
+            "path": "config/sophisticatedbackpacks-common.toml",
+            "sha1": "faab0a1537b5377ed89cf1a2f6e660116a15891b"
+        },
+        {
+            "path": "config/sophisticatedcore-client.toml",
+            "sha1": "08dbe082315554646cc1deeeb5dfef26b412236d"
+        },
+        {
+            "path": "config/sophisticatedcore-common.toml",
+            "sha1": "d5e70d5f121019f97c33b68ccc16146ae9c8a8e5"
+        },
+        {
+            "path": "config/terrablender.toml",
+            "sha1": "194a663d21fe1df84f7230013c470329088fa710"
+        },
+        {
+            "path": "config/tombstone-client.toml",
+            "sha1": "ff4870e37249596f280b182d6b47fd51d1992685"
+        },
+        {
+            "path": "config/tombstone-common.toml",
+            "sha1": "e482e0ee1d269d75270d4beefe47f31a19afc005"
+        },
+        {
+            "path": "config/trashslot-common.toml",
+            "sha1": "a71bdf32c03fb750b4a5faa85047658e849b8d43"
+        },
+        {
+            "path": "config/visualworkbench-client.toml",
+            "sha1": "4825cd32a0c5153e74c7e22068dd22d015fdaaab"
+        },
+        {
+            "path": "config/visualworkbench-common.toml",
+            "sha1": "94b8853750de660a443bf60703d7861b6bda5ecc"
+        },
+        {
+            "path": "config/watut-client.toml",
+            "sha1": "1239e7eff97a736c9e29fe57d8034b64bb766389"
+        },
+        {
+            "path": "config/watut-common.toml",
+            "sha1": "c858cf73b5760b42d42d0fe06981471b4f1debd4"
+        },
+        {
+            "path": "config/watut-item-arm-adjustments.json",
+            "sha1": "2cfa88c57c35df26af1391acb7f2f8eb8abd53ab"
+        },
+        {
+            "path": "config/watut-server.toml",
+            "sha1": "676f01f869328fa288c5ed25ac86459aa6249b04"
+        },
+        {
+            "path": "config/adorablehamsterpets/announcements.json",
+            "sha1": "8862bbd9d6bbde30722e1f1fb626b6e9758abc63"
+        },
+        {
+            "path": "config/adorablehamsterpets/main.toml",
+            "sha1": "5a59ee5711abe281d198e45d220a20651bf30826"
+        },
+        {
+            "path": "config/adorablehamsterpets/manifest.cache.json",
+            "sha1": "51828abe7149adeafe6c20f2f2e58c73f597072a"
+        },
+        {
+            "path": "config/betterdeserttemples/README.txt",
+            "sha1": "7d685fa191148b59f2d9dd19f06ce0f4d6dee2f3"
+        },
+        {
+            "path": "config/betterdeserttemples/neoforge-1_21/armorstands.json",
+            "sha1": "8bb33ad4489fbaf4246acea13c9f86efb3ef5751"
+        },
+        {
+            "path": "config/betterdeserttemples/neoforge-1_21/itemframes.json",
+            "sha1": "470a607010ad8fd6a76243238675e95d0b7c448e"
+        },
+        {
+            "path": "config/betterdeserttemples/neoforge-1_21/README.txt",
+            "sha1": "80a9d927f4978590ec21d5ae2e2a8e68b16f3277"
+        },
+        {
+            "path": "config/betterstrongholds/README.txt",
+            "sha1": "00ed29b440752cac0617bd7d2c44c971097e2c8c"
+        },
+        {
+            "path": "config/betterstrongholds/neoforge-1_21/armorstands.json",
+            "sha1": "47c1cba908c464143b607ec77497a099971b0c41"
+        },
+        {
+            "path": "config/betterstrongholds/neoforge-1_21/itemframes.json",
+            "sha1": "aac1cfbd797ca7598b6f14e49f9d5e0ad8130d8c"
+        },
+        {
+            "path": "config/betterstrongholds/neoforge-1_21/ores.json",
+            "sha1": "00ce4306f9694cad45ee701f641495074ec29f59"
+        },
+        {
+            "path": "config/betterstrongholds/neoforge-1_21/rareblocks.json",
+            "sha1": "114530c0b6e6a04253d5ddfc862e4b0f9ffb6ed6"
+        },
+        {
+            "path": "config/betterstrongholds/neoforge-1_21/README.txt",
+            "sha1": "ee9c20aeefab7187288a4289d129a3155efa5823"
+        },
+        {
+            "path": "config/biomeswevegone/misc.json",
+            "sha1": "7f035595f601526e6a5d8eeeaf20722e896cafdf"
+        },
+        {
+            "path": "config/biomeswevegone/mob_spawn.json",
+            "sha1": "07e249aa403139f9f8050a01742ff5e16848282e"
+        },
+        {
+            "path": "config/biomeswevegone/trades.json",
+            "sha1": "17b020f037c64fb06acede658ba1ad0fb3aefcc2"
+        },
+        {
+            "path": "config/biomeswevegone/world_generation.json5",
+            "sha1": "da38cfe58b59c80dd70c42c06a038434496a6e1e"
+        },
+        {
+            "path": "config/CoroUtil/General.toml",
+            "sha1": "1233bc5e9b76ae23493ad31db26e92b7da397270"
+        },
+        {
+            "path": "config/drippyloadingscreen/early_window_reference.properties",
+            "sha1": "232a6f7e10f67db37df4c4eb07b442e3ab360cb1"
+        },
+        {
+            "path": "config/drippyloadingscreen/options.txt",
+            "sha1": "076a7729990c17b296a1f3486af2d63781bd6af8"
+        },
+        {
+            "path": "config/fancymenu/customizablemenus.txt",
+            "sha1": "0efc3bc93ae10f00c6ac5d8789580a741c21eaac"
+        },
+        {
+            "path": "config/fancymenu/custom_gui_screens.txt",
+            "sha1": "50b4602527a4e3cfea6016ec001f3b68ace1d65c"
+        },
+        {
+            "path": "config/fancymenu/legacy_checklist.txt",
+            "sha1": "f1569161a6ad24cc61b02dece317ea16e351ff1e"
+        },
+        {
+            "path": "config/fancymenu/options.txt",
+            "sha1": "1da28b7d12ddca1729265d1c57d58379b505ee71"
+        },
+        {
+            "path": "config/fancymenu/user_variables.db",
+            "sha1": "b41f9d7688944b0d96eaa089a5a5bb74af28d258"
+        },
+        {
+            "path": "config/fancymenu/assets/terereland-logo.png",
+            "sha1": "7c3b621bebe0dbb8418feffc4193c2d121db7713"
+        },
+        {
+            "path": "config/fancymenu/customization/connect_screen_layout.txt",
+            "sha1": "efc3b1c1bf742e7210a4508cdd0ef1797554cff2"
+        },
+        {
+            "path": "config/fancymenu/customization/creative_mode_inventory_screen_layout.txt",
+            "sha1": "ac2b852856d62a878422df4c3039fbe9eadf0d42"
+        },
+        {
+            "path": "config/fancymenu/customization/disconnected_screen_layout.txt",
+            "sha1": "d24ba141359f06814e079e913f085ebebec82d8d"
+        },
+        {
+            "path": "config/fancymenu/customization/drippy_loading_overlay_layout.txt",
+            "sha1": "d8f8c2576c8a51b4b92e3168fc7f949dca5c6662"
+        },
+        {
+            "path": "config/fancymenu/customization/generic_dirt_message_screen_layout.txt",
+            "sha1": "04304144167c1f4cd3b960abdc28e53a789b2f9c"
+        },
+        {
+            "path": "config/fancymenu/customization/level_loading_screen_layout.txt",
+            "sha1": "bbadd3b423f768b7aa8f53098ebba11ef36ce4d9"
+        },
+        {
+            "path": "config/fancymenu/customization/net.neoforged.neoforge.client.gui.modmismatchdisconnectedscreen_layout.txt",
+            "sha1": "fcf7993f8e01e9d0165ffa5646827116a7daf230"
+        },
+        {
+            "path": "config/fancymenu/customization/options_screen_layout.txt",
+            "sha1": "042af52b4cd7ce8365a98d3b4134dec5ebdaef0e"
+        },
+        {
+            "path": "config/fancymenu/customization/pause_screen_layout.txt",
+            "sha1": "17252b7de50de12ac61022c3557b1a13dda7c7f2"
+        },
+        {
+            "path": "config/fancymenu/customization/progress_screen_layout.txt",
+            "sha1": "4a785343d6a3968fb6a79e8ae42f4ceaf9104e82"
+        },
+        {
+            "path": "config/fancymenu/customization/receiving_level_screen_layout.txt",
+            "sha1": "7e8de3dd7b686b0dd519586a77e1def5f371f8bf"
+        },
+        {
+            "path": "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget",
+            "sha1": "adc605cf794120522f34a402a4301baf4e59350d"
+        },
+        {
+            "path": "config/fancymenu/ui_themes/dark.json",
+            "sha1": "22cefe5b52927d21f68b7e1537f52fba7ec6cca1"
+        },
+        {
+            "path": "config/fancymenu/ui_themes/light.json",
+            "sha1": "800a6df3553074fe5474a9dc43d0ce0fdeb8f131"
+        },
+        {
+            "path": "config/fzzy_config/keybinds.toml",
+            "sha1": "f808afa706d9a4934612b20e1efd513416a0e8f1"
+        },
+        {
+            "path": "config/jade/hide-blocks.json",
+            "sha1": "a503776a467ca75d97916f99bf665dbf64a521a9"
+        },
+        {
+            "path": "config/jade/hide-entities.json",
+            "sha1": "ef2152a130cc5ff42903c76e69c3e4279d94b9e7"
+        },
+        {
+            "path": "config/jade/jade.json",
+            "sha1": "8ea73ab5be986b34ee05bf2dcef295f59dcde376"
+        },
+        {
+            "path": "config/jade/plugins.json",
+            "sha1": "ec1342fa0475c37fb39618636b00da4e20ec2bbd"
+        },
+        {
+            "path": "config/jade/sort-order.json",
+            "sha1": "5243a07b5a880bb0f22ee3a62edcdfa3ffe91993"
+        },
+        {
+            "path": "config/jei/blacklist.json",
+            "sha1": "a8a4458dce77bc89e82e71719ad2cc14b2739d39"
+        },
+        {
+            "path": "config/jei/ingredient-list-mod-sort-order.ini",
+            "sha1": "de14035e8049a77bae9850f995ba42ca0ae1590b"
+        },
+        {
+            "path": "config/jei/ingredient-list-type-sort-order.ini",
+            "sha1": "19a5db05bca2bd56f55af89504017ad52501c4d4"
+        },
+        {
+            "path": "config/jei/jei-client.ini",
+            "sha1": "6e176db05e39095e938ec23fff7c8c8e7fa32b98"
+        },
+        {
+            "path": "config/jei/jei-colors.ini",
+            "sha1": "46f80e4857aa8f8d9b0928e107c4391d54b3b313"
+        },
+        {
+            "path": "config/jei/jei-debug.ini",
+            "sha1": "3efed6169141125198a9a6b939f0b02e4d5ef4d2"
+        },
+        {
+            "path": "config/jei/jei-mod-id-format.ini",
+            "sha1": "56609b02508999a5d98f995226c7c7b6449f42a7"
+        },
+        {
+            "path": "config/jei/recipe-category-sort-order.ini",
+            "sha1": "2cb1ebd32dd3dd383f7cd9307b40b7efbbd39ccf"
+        },
+        {
+            "path": "config/konkrete/locals/de_de.local",
+            "sha1": "02adaf2602f1ba03a9352db3d10a6fac3a02aea5"
+        },
+        {
+            "path": "config/konkrete/locals/en_us.local",
+            "sha1": "42badc338e767559db38a67bd3e8020a92000e56"
+        },
+        {
+            "path": "config/konkrete/locals/pl_pl.local",
+            "sha1": "adf2ded54b4952ca83af26a1217e2c5db8ac1429"
+        },
+        {
+            "path": "config/konkrete/locals/pt_br.local",
+            "sha1": "9c324fb4d33106366e6cbb5400c8c34f11539d34"
+        },
+        {
+            "path": "config/openloader/options.json",
+            "sha1": "be6e174a4dc598af454b777a32aae6726ad3f83c"
+        },
+        {
+            "path": "config/sereneseasons/fertility.toml",
+            "sha1": "f200236ef142693565674c774f4de3bf99a8bb2c"
+        },
+        {
+            "path": "config/sereneseasons/seasons.toml",
+            "sha1": "8fce1f7d48dc90352c22db7c307c36cb39de0c46"
+        },
+        {
+            "path": "config/voicechat/category-volumes.properties",
+            "sha1": "c9f8fd05a81e609071657f5c4c27d5cd377c5b12"
+        },
+        {
+            "path": "config/voicechat/player-volumes.properties",
+            "sha1": "c77eeb6fb16c2844e9bbcf19667d30c9401212d5"
+        },
+        {
+            "path": "config/voicechat/translations.properties",
+            "sha1": "383e00e7dd0d5f00daa2ffcfd24c939d255dc7e3"
+        },
+        {
+            "path": "config/voicechat/username-cache.json",
+            "sha1": "bf21a9e8fbc5a3846fb05b4fa0859e0917b2202f"
+        },
+        {
+            "path": "config/voicechat/voicechat-client.properties",
+            "sha1": "ad886556ecbba865fdbfbe048f005b46053b3a25"
+        },
+        {
+            "path": "config/voicechat/voicechat-server.properties",
+            "sha1": "5628e42fee76579e983ed189a4eb50ff9e672577"
+        },
+        {
+            "path": "config/watermedia/custom_vlc_path.txt",
+            "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "path": "mods/AmbientSounds_NEOFORGE_v6.3.1_mc1.21.1.jar",
+            "sha1": "10e4fbb2da01933b226be9859898d24418c10ff7"
+        },
+        {
+            "path": "mods/appleskin-neoforge-mc1.21-3.0.7.jar",
+            "sha1": "8f76d97a7f61f8d61db6d84a83baf29a3bb56330"
+        },
+        {
+            "path": "mods/architectury-13.0.8-neoforge.jar",
+            "sha1": "6ca11d3cc136bf69bb8f4d56982481eb85b5100b"
+        },
+        {
+            "path": "mods/balm-neoforge-1.21.1-21.0.55.jar",
+            "sha1": "0a134aee7ca0a43a5396923e849ff84ec34f7efd"
+        },
+        {
+            "path": "mods/born_in_chaos_[Neoforge]_1.21.1_1.7.3.jar",
+            "sha1": "f8bd2d53a99884e62cdf0af1c99bb2b5debb4995"
+        },
+        {
+            "path": "mods/catalogue-neoforge-1.21.1-1.11.2.jar",
+            "sha1": "6d67f855c20bc6392763cfb22e1152da4e8015b4"
+        },
+        {
+            "path": "mods/chat_heads-0.14.2-neoforge-1.21.jar",
+            "sha1": "ec242eb18f8479c2f4cedb6c79a63686dc91c55e"
+        },
+        {
+            "path": "mods/Chunky-NeoForge-1.4.23.jar",
+            "sha1": "ab0c74743a653020fe2dfc4986b43e893947f3e9"
+        },
+        {
+            "path": "mods/comforts-neoforge-9.0.4+1.21.1.jar",
+            "sha1": "3170b2e32cf60df49e7e8ff13bc0b64315170197"
+        },
+        {
+            "path": "mods/Corgilib-NeoForge-1.21.1-5.0.0.7.jar",
+            "sha1": "a84b16272a6cd1b3fec0ff0e2ffdd05cf92dc02a"
+        },
+        {
+            "path": "mods/coroutil-neoforge-1.21.0-1.3.8.jar",
+            "sha1": "b044c51d00d60b5645a0c0890812935cd933555f"
+        },
+        {
+            "path": "mods/CreativeCore_NEOFORGE_v2.13.15_mc1.21.1.jar",
+            "sha1": "7a08497685e093d513aaed94b524d82fcd91cbe5"
+        },
+        {
+            "path": "mods/crittersandcompanions-neoforge-1.21.1-2.3.4.jar",
+            "sha1": "c32ae5df533d081f845a153ab67c8d1c61cf339f"
+        },
+        {
+            "path": "mods/cute_companions_ducks-0.0.2-neoforge-1.21.1.jar",
+            "sha1": "9a24fe4bda0b33be9ed872088f04601a1f49aa0f"
+        },
+        {
+            "path": "mods/drippyloadingscreen_neoforge_3.1.0_MC_1.21.1.jar",
+            "sha1": "907f43294b63cd845bf2fdad1ea5fe5c52552508"
+        },
+        {
+            "path": "mods/drippy_early_loading_module_neoforge_3.1.0_MC_1.21.1.jar",
+            "sha1": "f6d8992603842fbf1f39eaa70ec5aa7c2c15dee4"
+        },
+        {
+            "path": "mods/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+            "sha1": "1228c7597c4b6cbaec10a090f9b5b471ca9042d4"
+        },
+        {
+            "path": "mods/fancymenu_neoforge_3.8.1_MC_1.21.1.jar",
+            "sha1": "061a2c1ae0563d9d433928c243c58ee9b45f630f"
+        },
+        {
+            "path": "mods/FarmersDelight-1.21.1-1.2.9.jar",
+            "sha1": "9abe078f48781e4b87288dbc59691c8ba1152d8d"
+        },
+        {
+            "path": "mods/feur_extension_desert-1.21.1-neoforge.jar",
+            "sha1": "105dc3d36bf2f5847bfba124342b2d3f61aef06b"
+        },
+        {
+            "path": "mods/framework-neoforge-1.21.1-0.13.5.jar",
+            "sha1": "ac8020d47e347d1b1de7df27d4c86d4721016944"
+        },
+        {
+            "path": "mods/ftb-chunks-neoforge-2101.1.13.jar",
+            "sha1": "a02e406679754933a4f39ad89a9ea8b54e90380e"
+        },
+        {
+            "path": "mods/ftb-library-neoforge-2101.1.28.jar",
+            "sha1": "de7e0fb584de4915cbab0019275adb746a7d85c0"
+        },
+        {
+            "path": "mods/ftb-teams-neoforge-2101.1.7.jar",
+            "sha1": "2ff0b6f0e1e6f329cdd899c34eb566825b549ba7"
+        },
+        {
+            "path": "mods/ftb-xmod-compat-neoforge-21.1.6.jar",
+            "sha1": "7dd6789cc0f1dad8f3bf71ee915ac1d279073f67"
+        },
+        {
+            "path": "mods/fzzy_config-0.7.3+1.21+neoforge.jar",
+            "sha1": "5080991f845375be2d9ffe87538d64ced1a9e576"
+        },
+        {
+            "path": "mods/geckolib-neoforge-1.21.1-4.8.2.jar",
+            "sha1": "b2d84a5ea8b8944be66dbf817f0d4aa3f494db7a"
+        },
+        {
+            "path": "mods/GlitchCore-neoforge-1.21.1-2.1.0.0.jar",
+            "sha1": "b95318c14ef20bd24886480d7640a5eca6aa6cec"
+        },
+        {
+            "path": "mods/ImmediatelyFast-NeoForge-1.6.7+1.21.1.jar",
+            "sha1": "820e7b79c123d2a884410a6ab9882b0ae0e2d1a6"
+        },
+        {
+            "path": "mods/iris-neoforge-1.8.12+mc1.21.1.jar",
+            "sha1": "a3e6355915c7d3b2bc392724795113e51d289378"
+        },
+        {
+            "path": "mods/Jade-1.21.1-NeoForge-15.10.3.jar",
+            "sha1": "0c7e9b04e2481d26c9080dd5d32351490d1fed3a"
+        },
+        {
+            "path": "mods/jei-1.21.1-neoforge-19.25.1.328.jar",
+            "sha1": "4f5c85dc4bd1065cad8ff4fb770777e72f67ea6d"
+        },
+        {
+            "path": "mods/katters-structures-2.1.jar",
+            "sha1": "0e0f9c1c9eb3ac25d7e0ff8f2618ff9df55b464c"
+        },
+        {
+            "path": "mods/kawaiidishes-1.13.jar",
+            "sha1": "1b850820a61cc0dff7ec3b3a8706dd6ec2e6af1b"
+        },
+        {
+            "path": "mods/konkrete_neoforge_1.9.9_MC_1.21.jar",
+            "sha1": "97771eb287d5ac7fe667d1df9493d5e54c8ca1fa"
+        },
+        {
+            "path": "mods/kotlinforforge-5.10.0-all.jar",
+            "sha1": "a86a436cb7ffd0509750ba7b078fe88143da1ea6"
+        },
+        {
+            "path": "mods/letsdo-bakery-neoforge-2.1.2.jar",
+            "sha1": "a5ae82e339e0d200a77894ad1cdb0de5d5c52698"
+        },
+        {
+            "path": "mods/letsdo-farm_and_charm-neoforge-1.1.14.jar",
+            "sha1": "e31f087146c199a68c2aeea1b973b58c0f7e70c9"
+        },
+        {
+            "path": "mods/mcw-mcwholidays-1.1.1-mc1.21.1neoforge.jar",
+            "sha1": "87da2d8423df8257b3630c3a278b75e0f38155cb"
+        },
+        {
+            "path": "mods/melody_neoforge_1.0.10_MC_1.21.jar",
+            "sha1": "e83052a92c4ca0016bcfe7f0207273983dc84698"
+        },
+        {
+            "path": "mods/MOAdecor COOKERY 1.21.1.B.jar",
+            "sha1": "602aae695f3dbf0bfa586daabc75d8a1cf8ca8b8"
+        },
+        {
+            "path": "mods/MOAdecor Garden 1.21.1.A.jar",
+            "sha1": "c639ad58943b8e1809b8cb3f117410065bfd77b2"
+        },
+        {
+            "path": "mods/MOAdecor TOYS 1.21.1.A.jar",
+            "sha1": "844c3edf4f3f28ece6a4769afa7d722193cfc791"
+        },
+        {
+            "path": "mods/moonlight-1.21-2.26.6-neoforge.jar",
+            "sha1": "5409e2519e4a781c4594aa9142453c2d3403d8d1"
+        },
+        {
+            "path": "mods/Oh-The-Biomes-Weve-Gone-NeoForge-2.5.1.jar",
+            "sha1": "09664db705620465683ce75b5fc06015148e5384"
+        },
+        {
+            "path": "mods/Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.1.2.jar",
+            "sha1": "32e7cd9e32ac0e4007754b79f5b08f9754c81fda"
+        },
+        {
+            "path": "mods/OpenLoader-neoforge-1.21.1-21.1.5.jar",
+            "sha1": "b4b49fa0bbefcecd41aaba60aca38c3658ac2c46"
+        },
+        {
+            "path": "mods/Patchouli-1.21.1-92-NEOFORGE.jar",
+            "sha1": "97ae42096ee4a0a242cd8468dde293017f3cc39c"
+        },
+        {
+            "path": "mods/prickle-neoforge-1.21.1-21.1.11.jar",
+            "sha1": "5174059ecf97340a0de5ef211b938de26c4eaa36"
+        },
+        {
+            "path": "mods/primal-1.0.7+1.21.jar",
+            "sha1": "386d2a2cd53a21d45d941bf0da4c216715225d6f"
+        },
+        {
+            "path": "mods/PuzzlesLib-v21.1.39-1.21.1-NeoForge.jar",
+            "sha1": "bcc0900fbbf6d6fc5ca05039cd5725e6145225f2"
+        },
+        {
+            "path": "mods/refurbished_furniture-neoforge-1.21.1-1.0.20.jar",
+            "sha1": "c0ac6ad5a7a6ce982fd152333ef173545186edd3"
+        },
+        {
+            "path": "mods/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar",
+            "sha1": "127e4a3e699dafebc512e1fa7983f245b49cb420"
+        },
+        {
+            "path": "mods/smoothswapping-0.9.3.1-1.21.1-neoforge.jar",
+            "sha1": "8a237bfa56adf858184296f803d0cbffbc5306de"
+        },
+        {
+            "path": "mods/snowyspirit-1.21.1-3.0.18-neoforge.jar",
+            "sha1": "26923cab5a620ce1e68c2decf2770aa8481b77a4"
+        },
+        {
+            "path": "mods/sodium-neoforge-0.6.13+mc1.21.1.jar",
+            "sha1": "38af70fa4dc4b2aaac636e92fdba3bedd5a025e1"
+        },
+        {
+            "path": "mods/sophisticatedbackpacks-1.21.1-3.25.14.1410.jar",
+            "sha1": "5676cf0e7634a6b186e491f5f8d919563808e6f8"
+        },
+        {
+            "path": "mods/sophisticatedcore-1.21.1-1.3.89.1239.jar",
+            "sha1": "98bc203937cf0b08015ea8ebfbdba5518284886a"
+        },
+        {
+            "path": "mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+            "sha1": "744394d979b422be560babf9df7a6800ede9ac5b"
+        },
+        {
+            "path": "mods/tombstone-neoforge-1.21.1-9.4.8.jar",
+            "sha1": "759633541e96254f4dd73ac1af936d9df2328b76"
+        },
+        {
+            "path": "mods/trashslot-neoforge-1.21.1-21.1.4.jar",
+            "sha1": "0b7004a166834ae9a33cc37d769947436bb3f956"
+        },
+        {
+            "path": "mods/VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar",
+            "sha1": "74941456944461f39b10504ec9aed8c1e0fb7276"
+        },
+        {
+            "path": "mods/voicechat-neoforge-1.21.1-2.6.6.jar",
+            "sha1": "4d066b0fa64b0b46e676c22819fa6fa0a97daeaf"
+        },
+        {
+            "path": "mods/wab-1.21.1-1.3.2.jar",
+            "sha1": "67feffa9d6b8a74c4cac1e3858653fcbf33f69c8"
+        },
+        {
+            "path": "mods/watermedia-2.1.30.jar",
+            "sha1": "d2ac566dc3416101c94b807dcade279c32d4d601"
+        },
+        {
+            "path": "mods/watervision-NF-mc1.21.1-v0.1.0-alpha.jar",
+            "sha1": "3fc5620a518583b8a7ea293a6d79584861e75335"
+        },
+        {
+            "path": "mods/watut-neoforge-1.21.0-1.2.7.jar",
+            "sha1": "07cfb8fb1269f1eae1056492912e3544be979f62"
+        },
+        {
+            "path": "mods/weavers_cosmetics-neo-1.21.1_v1.0.jar",
+            "sha1": "a4d933d58242ee741d2321f9bc2203fc0beb3082"
+        },
+        {
+            "path": "mods/WinterOverhaul-NeoForge-4.0.2+1.21.1.jar",
+            "sha1": "984ca1e7c333979382f3d49f98ba096d44125363"
+        },
+        {
+            "path": "mods/YungsApi-1.21.1-NeoForge-5.1.6.jar",
+            "sha1": "e1c394779fb9e038e4f7a1b4558d0432607d263b"
+        },
+        {
+            "path": "mods/YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar",
+            "sha1": "90529257dbd92558998c65178294bc7b2fd16a64"
+        },
+        {
+            "path": "mods/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+            "sha1": "6a14e1d8201f068ca87ef8333e471c5378955906"
+        },
+        {
+            "path": "mods/YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+            "sha1": "fba629defdb92ad99ec4f411895afb6e19555a18"
+        },
+        {
+            "path": "mods/YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar",
+            "sha1": "5d06a5850af7c577612d4592706a8e156bbe1cbf"
+        },
+        {
+            "path": "mods/YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+            "sha1": "18099c2d54acd16bb8ab90a66f40fa16496d065e"
+        },
+        {
+            "path": "mods/YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+            "sha1": "62833733aaf407f36bdacf648ed4b2ef9940662b"
+        },
+        {
+            "path": "mods/[1.21.1] SecurityCraft v1.10.1.jar",
+            "sha1": "692f81f4fdcd0d1298db96a9582eea41baeae252"
+        },
+        {
+            "path": "shaderpacks/ComplementaryReimagined_r5.6.1.zip",
+            "sha1": "7fa0a31aa9375ad63e4b13cb1de8d4a9702dd74e"
+        },
+        {
+            "path": "shaderpacks/ComplementaryUnbound_r5.6.1.zip",
+            "sha1": "db9d5d3fab53bb896e1d727661540ecf570059a9"
+        }
+    ]
+}

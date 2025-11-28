@@ -1,0 +1,30 @@
+
+["Main params"]
+MODPACK_NAME = "Terereland"
+MC_VERSION = "1.21.1"
+LOADER = "neoforge"
+LOADER_VERSION = "21.1.215"
+JAVA_VERSION = 21
+
+["Modpack params"]
+MODPACK_ROOT = "./modpack"
+
+["Release params"]
+REPO = "ZTormDev/Terereland-Modpack-Releases"
+TAG_PREFIX = "v"
+RELEASES_DIR = "./releases"
+
+["Ignore files"]
+IGNORE = [
+    "modpack/modpack.json",
+    "modpack/version.txt",
+    ".DS_Store",
+    "__pycache__",
+    ".git",
+    ".github",
+    "build_modpack.py",
+    "release_modpack.py",
+    ".gitignore",
+    "releases/",
+    "settings.toml",
+]
